@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  background: linear-gradient(135deg, #e5e5fd 0%, #f0f0ff 100%);
+  min-height: 100vh;
+  border: 12px solid #1d1e4c;
+  padding: 20px 0;
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+}
+
+.top_section {
+  margin-top: 50px;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.top_section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1d1e4c;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.top_section h4 {
+  font-size: 1.8rem;
+  color: #555;
+  text-align: end;
+  font-weight: 400;
+}
+
+.image_container {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #1d1e4c;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.image_container:hover {
+  transform: scale(1.03);
+}
+
+.image_container img {
+  width: 300px;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.about_section {
+  margin-top: 60px;
+  padding: 0 10px;
+}
+
+.about_section h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #1d1e4c;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.about_section h2:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 4px;
+  background-color: #1d1e4c;
+}
+
+.about_section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about_section p b {
+  color: #1d1e4c;
+}
+
+.biography_section {
+  margin: 60px 0;
+  padding: 0 10px;
+}
+
+.biography_section h3 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #1d1e4c;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.biography_section h3:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background-color: #1d1e4c;
+}
+
+.biography_section ul {
+  margin-left: 25px;
+  list-style-type: none;
+}
+
+.biography_section li {
+  margin-bottom: 18px;
+  position: relative;
+  padding: 15px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1rem;
+  padding-left: 25px;
+}
+
+.biography_section li:before {
+  content: "📚";
+  position: absolute;
+  left: 0;
+  top: 15px;
+}
+
+.biography_section li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  margin: 50px 0 30px;
+  padding: 20px;
+  background-color: #1d1e4c;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  text-align: center;
+  color: white;
+  font-size: 1.1rem;
+}
+
+footer a {
+  color: #e5e5fd;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .top_section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .top_section h1 {
+    font-size: 2.5rem;
+  }
+  
+  .top_section h4 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .image_container img {
+    width: 250px;
+    height: 270px;
+  }
+  
+  .about_section h2 {
+    font-size: 2rem;
+  }
+  
+  .biography_section h3 {
+    font-size: 1.8rem;
+  }
+}
